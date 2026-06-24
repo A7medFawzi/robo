@@ -1,31 +1,42 @@
-# فضل الكندى - AI Card Section
+# Fadl Alkindi AI Card Section + WhatsApp Button
 
-## Run locally
+Next.js + TypeScript + Tailwind CSS card-style section with Spline robot, cursor light, Arabic content, and WhatsApp CTA button.
+
+## Run
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+## Main file
 
-```bash
-npm run build
+```txt
+components/sections/fadl-alkindi-ai-section.tsx
 ```
 
-## Vercel settings
+## Change WhatsApp number
 
-- Framework Preset: Next.js
-- Root Directory: ./
-- Build Command: npm run build
-- Install Command: npm install
-- Output Directory: leave empty
+Open:
 
-Do not set Output Directory to `dist` or `public`.
+```txt
+components/sections/fadl-alkindi-ai-section.tsx
+```
 
-## Fixes included
+Then replace:
 
-- `tsconfig.json` target changed from `es5` to `ES2017`.
-- TypeScript pinned to `5.9.3` instead of `latest`.
-- Next.js updated from `15.3.5` to `16.2.4`.
-- `global.d.ts` added for CSS imports.
+```ts
+const whatsappNumber = "201000000000";
+```
+
+with your real number in international format without `+`, for example:
+
+```ts
+const whatsappNumber = "9665XXXXXXXX";
+```
+
+or:
+
+```ts
+const whatsappNumber = "201XXXXXXXXX";
+```
