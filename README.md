@@ -1,42 +1,21 @@
-# Fadl Alkindi AI Card Section + WhatsApp Button
+# فضل الكندى - حلول الذكاء الاصطناعى
 
-Next.js + TypeScript + Tailwind CSS card-style section with Spline robot, cursor light, Arabic content, and WhatsApp CTA button.
+## Vercel deploy notes
 
-## Run
+Make sure these files are committed to GitHub:
 
-```bash
-npm install
-npm run dev
-```
+- `app/globals.css`
+- `global.d.ts`
+- `app/layout.tsx`
+- `app/page.tsx`
+- `package.json`
 
-## Main file
+Vercel settings:
 
-```txt
-components/sections/fadl-alkindi-ai-section.tsx
-```
+- Framework Preset: Next.js
+- Root Directory: `./` if `package.json` is in the repository root
+- Install Command: `npm install`
+- Build Command: `npm run build`
+- Output Directory: leave empty
 
-## Change WhatsApp number
-
-Open:
-
-```txt
-components/sections/fadl-alkindi-ai-section.tsx
-```
-
-Then replace:
-
-```ts
-const whatsappNumber = "201000000000";
-```
-
-with your real number in international format without `+`, for example:
-
-```ts
-const whatsappNumber = "9665XXXXXXXX";
-```
-
-or:
-
-```ts
-const whatsappNumber = "201XXXXXXXXX";
-```
+Do not upload `node_modules` or `.next`.
