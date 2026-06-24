@@ -1,34 +1,34 @@
-# Fadl Al-Kindi AI Card Section - Next.js Security Fixed
+# Fadl Alkindi AI Card Section
 
-This version patches the Vercel warning: **Vulnerable version of Next.js detected**.
+This is a Next.js + TypeScript + Tailwind CSS project containing a card-style Spline robot section.
 
-## Fixes included
-
-- Updated `next` from `15.3.5` to `15.5.18`
-- Updated `react` and `react-dom` to `19.1.1`
-- Removed deprecated `baseUrl` from `tsconfig.json`
-- Kept `app/globals.css` in the correct location
-- Kept the WhatsApp button and card-style robot section
-
-## Run locally
+## Run
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build locally
+Open:
 
-```bash
-npm run build
+```txt
+http://localhost:3000
 ```
 
-## Vercel settings
+## Main files
 
-- Framework Preset: Next.js
-- Root Directory: ./
-- Build Command: npm run build
-- Install Command: npm install
-- Output Directory: empty
+```txt
+components/sections/fadl-alkindi-ai-section.tsx
+components/ui/cursor-light.tsx
+components/ui/splite.tsx
+app/page.tsx
+app/globals.css
+```
 
-If Vercel still says it cannot find an output directory named `public`, clear the Output Directory field in Project Settings.
+## Notes
+
+- This version is **not fullscreen**.
+- The section appears as a large centered card, like the reference screenshot.
+- The robot is not inside a separate visual card; it is merged into the same background.
+- The light follows the cursor over the card.
+- Tailwind is pinned to v3 to avoid PostCSS issues.
