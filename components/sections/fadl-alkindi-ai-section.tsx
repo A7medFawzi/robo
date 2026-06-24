@@ -5,7 +5,7 @@ import { SplineScene } from "@/components/ui/splite";
 
 export function FadlAlkindiAiSection() {
   const whatsappNumber = "966500406029";
-  const whatsappMessage = encodeURIComponent("مرحبًا، أريد التواصل بخصوص حلول الذكاء الاصطناعي");
+  const whatsappMessage = encodeURIComponent("مرحبًا، فضل اريد معرفة خدمات الذكاء الإصطناعى بما  أنك كبير الشغلانة");
 
   return (
     <section className="w-full bg-[#080808] px-4 py-14 sm:px-6 lg:px-8">
