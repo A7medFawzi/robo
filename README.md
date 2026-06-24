@@ -1,34 +1,31 @@
-# Fadl Alkindi AI Card Section
+# فضل الكندى - AI Card Section
 
-This is a Next.js + TypeScript + Tailwind CSS project containing a card-style Spline robot section.
-
-## Run
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open:
+## Build
 
-```txt
-http://localhost:3000
+```bash
+npm run build
 ```
 
-## Main files
+## Vercel settings
 
-```txt
-components/sections/fadl-alkindi-ai-section.tsx
-components/ui/cursor-light.tsx
-components/ui/splite.tsx
-app/page.tsx
-app/globals.css
-```
+- Framework Preset: Next.js
+- Root Directory: ./
+- Build Command: npm run build
+- Install Command: npm install
+- Output Directory: leave empty
 
-## Notes
+Do not set Output Directory to `dist` or `public`.
 
-- This version is **not fullscreen**.
-- The section appears as a large centered card, like the reference screenshot.
-- The robot is not inside a separate visual card; it is merged into the same background.
-- The light follows the cursor over the card.
-- Tailwind is pinned to v3 to avoid PostCSS issues.
+## Fixes included
+
+- `tsconfig.json` target changed from `es5` to `ES2017`.
+- TypeScript pinned to `5.9.3` instead of `latest`.
+- Next.js updated from `15.3.5` to `16.2.4`.
+- `global.d.ts` added for CSS imports.
