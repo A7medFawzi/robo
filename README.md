@@ -1,21 +1,31 @@
-# فضل الكندى - حلول الذكاء الاصطناعى
+# Fadl Al-Kindi AI Card Section - Vercel Fixed
 
-## Vercel deploy notes
+This version fixes the Vercel/TypeScript build error related to deprecated `baseUrl`.
 
-Make sure these files are committed to GitHub:
+## Fixes included
 
-- `app/globals.css`
-- `global.d.ts`
-- `app/layout.tsx`
-- `app/page.tsx`
-- `package.json`
+- Removed `baseUrl` from `tsconfig.json`
+- Kept alias paths: `@/*` -> `./*`
+- Pinned TypeScript to `5.8.3` instead of `latest`
+- Ensured `app/globals.css` exists
 
-Vercel settings:
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Vercel settings
 
 - Framework Preset: Next.js
-- Root Directory: `./` if `package.json` is in the repository root
-- Install Command: `npm install`
-- Build Command: `npm run build`
-- Output Directory: leave empty
-
-Do not upload `node_modules` or `.next`.
+- Root Directory: ./
+- Build Command: npm run build
+- Install Command: npm install
+- Output Directory: empty
