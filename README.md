@@ -1,13 +1,14 @@
-# Fadl Al-Kindi AI Card Section - Vercel Fixed
+# Fadl Al-Kindi AI Card Section - Next.js Security Fixed
 
-This version fixes the Vercel/TypeScript build error related to deprecated `baseUrl`.
+This version patches the Vercel warning: **Vulnerable version of Next.js detected**.
 
 ## Fixes included
 
-- Removed `baseUrl` from `tsconfig.json`
-- Kept alias paths: `@/*` -> `./*`
-- Pinned TypeScript to `5.8.3` instead of `latest`
-- Ensured `app/globals.css` exists
+- Updated `next` from `15.3.5` to `15.5.18`
+- Updated `react` and `react-dom` to `19.1.1`
+- Removed deprecated `baseUrl` from `tsconfig.json`
+- Kept `app/globals.css` in the correct location
+- Kept the WhatsApp button and card-style robot section
 
 ## Run locally
 
@@ -16,7 +17,7 @@ npm install
 npm run dev
 ```
 
-## Build
+## Build locally
 
 ```bash
 npm run build
@@ -29,3 +30,5 @@ npm run build
 - Build Command: npm run build
 - Install Command: npm install
 - Output Directory: empty
+
+If Vercel still says it cannot find an output directory named `public`, clear the Output Directory field in Project Settings.
