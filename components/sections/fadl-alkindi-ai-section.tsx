@@ -4,7 +4,7 @@ import { CursorLight } from "@/components/ui/cursor-light";
 import { SplineScene } from "@/components/ui/splite";
 
 export function FadlAlkindiAiSection() {
-  const whatsappNumber = "201000000000";
+  const whatsappNumber = "966500406029";
   const whatsappMessage = encodeURIComponent("مرحبًا، أريد التواصل بخصوص حلول الذكاء الاصطناعي");
 
   return (
